@@ -15,7 +15,6 @@ import (
 
 func pinghandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "pong")
-	//w.Write("pong")
 }
 
 func main() {
