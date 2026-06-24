@@ -1,7 +1,3 @@
-Terminal Test Script (test_endpoints.sh)
-This shell script acts as an automated collection of curl requests. You can run this directly from their terminal to verify if their 7 endpoints match your performance requirements.
-Create a file named test_endpoints.sh, paste the code below, and make it executable using chmod +x test_endpoints.sh.
-Use ./test_endpoints.sh  to run the tests.
 #!/bin/bash
 
 # Configuration

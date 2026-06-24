@@ -25,9 +25,3 @@ func hellohandler(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprint(w, "Hello,", " ", name, "!")
 }
-
-func main() {
-	http.HandleFunc("/hello", hellohandler)
-	fmt.Println("server running on http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
-}

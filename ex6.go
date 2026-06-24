@@ -22,8 +22,3 @@ func dashboardhandler(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Fprint(w, "Welcome to the Dashboard", "\n")
 }
-func main() {
-	http.HandleFunc("/dashboard", dashboardhandler)
-	fmt.Println("server running on http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
-}

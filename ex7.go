@@ -19,11 +19,3 @@ func legacyhandler(w http.ResponseWriter, r *http.Request) {
 func v2handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Welcome to version 2")
 }
-
-func main() {
-	http.HandleFunc("/legacy", legacyhandler)
-	http.HandleFunc("/v2", v2handler)
-
-	fmt.Println("server running on http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
-}

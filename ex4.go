@@ -46,9 +46,3 @@ func calculatehandler(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprint(w, "Result: ", result)
 }
-
-func main() {
-	http.HandleFunc("/calculate", calculatehandler)
-	fmt.Println("server running on http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
-}
